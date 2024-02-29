@@ -36,14 +36,14 @@ In this tutorial, we'll step through implementing dynamic plugin loading, which 
 This class will inherit from the System class `AssemblyLoadContext`, aiming to correctly load DLLs and resolve
 their dependencies at the specified path.
 
-[Go to the code >PluginLoader.cs](https://github.com/OptimaJetLLC/dynamic-plugin-loading/blob/master/DynamicPluginLoading/PluginLoader.cs)
+[Go to the code >PluginLoader.cs](https://github.com/optimajet/dynamic-plugin-loading/blob/master/DynamicPluginLoading/PluginLoader.cs)
 
 ### Extension Method
 
 The extension method allows us to add dynamic loading of plugins into the Workflow Engine Runtime
 initialization pipeline alongside other settings.
 
-[Go to the code >Extensions.cs](https://github.com/OptimaJetLLC/dynamic-plugin-loading/blob/master/DynamicPluginLoading/Extensions.cs)
+[Go to the code >Extensions.cs](https://github.com/optimajet/dynamic-plugin-loading/blob/master/DynamicPluginLoading/Extensions.cs)
 
 ### Project with Plugin
 
@@ -61,7 +61,7 @@ This requires several steps:
    dotnet add MyPlugin package WorkflowEngine.NETCore-Core
    ```
 3. Add a new class `MyPlugin` implementing the `IWorkflowPlugin` interface. 
-[Go to the code >MyPlugin.cs](https://github.com/OptimaJetLLC/dynamic-plugin-loading/blob/master/MyPlugin/MyPlugin.cs)
+[Go to the code >MyPlugin.cs](https://github.com/optimajet/dynamic-plugin-loading/blob/master/MyPlugin/MyPlugin.cs)
 4. Build the project and copy its DLL to the `plugins/{plugin_name}/…` folder.
    ```bash
    dotnet build
