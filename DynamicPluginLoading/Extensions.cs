@@ -12,8 +12,7 @@ public static class Extensions
     {
         foreach (var plugin in plugins)
         {
-            var pluginFolder = $"{PluginsFolder}\\{plugin}";
-            var dllPath = Path.Combine(Environment.CurrentDirectory, $"{pluginFolder}\\{plugin}.dll");
+            var dllPath = Path.Combine(Environment.CurrentDirectory, PluginsFolder, plugin, $"{plugin}.dll");
 
             try
             {
