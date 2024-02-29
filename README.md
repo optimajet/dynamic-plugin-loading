@@ -1,4 +1,4 @@
-# Workflow Engine: Dynamic Plugin Loading
+# Workflow Engine: Dynamic plugin loading
 
 In this repository, there is a project integrated with the [WorkflowEngine](https://workflowengine.io/) 
 and featuring the implementation of dynamic plugin loading. This code serves as an example of 
@@ -6,7 +6,7 @@ following the tutorial outlined in the [documentation](https://workflowengine.io
 
 In this tutorial, we'll implement dynamic plugin loading. This allows you to customize the Workflow Engine
 by placing compiled DLLs with plugins into the *plugins* folder. Plugins are classes that implement `IWorkflowPlugin`,
-enabling the engine to incorporate new Actions, Rules, ect. Learn more about [plugins](https://workflowengine.io/documentation/plugins).
+enabling the engine to incorporate new Actions, Rules, etc. Learn more about [plugins](https://workflowengine.io/documentation/plugins).
 
 ### Motivation
 
